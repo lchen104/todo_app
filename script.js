@@ -49,6 +49,7 @@ function addTodo(todo) {
             todoEL.classList.toggle('completed');
         })
 
+        // remove items
         todoEL.addEventListener('contextmenu', (e) => {
             e.preventDefault();
 
