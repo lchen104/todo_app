@@ -44,6 +44,17 @@ function addTodo(todo) {
 
         // clear out input after enter
         input.value = "";
+
+        todoEL.addEventListener('click', () => {
+            todoEL.classList.toggle('completed');
+        })
+
+        todoEL.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+
+            // remove list item
+            todoEL.remove();
+        });
     }
 
 };
